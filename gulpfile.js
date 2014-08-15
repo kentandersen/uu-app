@@ -17,10 +17,6 @@ var build  = path.join(__dirname, 'build');
 var webapp = path.join(__dirname, 'src');
 var config = path.join(__dirname, 'config');
 
-//Config
-var generateSourceMaps = process.env.GEN_SOURCEMAPS === "true";
-
-
 // Test
 gulp.task('jshint', function() {
   gulp.src([webapp + '/js/**/*.js'])
