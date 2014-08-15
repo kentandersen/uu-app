@@ -5,7 +5,9 @@ var sourcemaps = require('gulp-sourcemaps');
 var rename = require("gulp-rename");
 var rimraf = require('rimraf');
 
-var browserify = require('browserify');
+var browserify = require('gulp-browserify');
+var hbsfy = require('hbsfy');
+
 var source = require('vinyl-source-stream');
 var jshint = require('gulp-jshint');
 var imagemin = require('gulp-imagemin');
@@ -46,10 +48,15 @@ gulp.task('html', function() {
 });
 
 gulp.task('js', function() {
-  return browserify(webapp + '/js/main.js', { debug: true })
-    .bundle()
-    .pipe(source('app.js'))
-    .pipe(gulp.dest(path.join(build, 'js')));
+  var handlebars = hbsfy.configure({
+    extensions: ["hb"]
+  });
+  return gulp.src(webapp + '/js/main.js')
+    .pipe(browserify({
+      transform: [handlebars],
+      debug: true
+    }))
+    .pipe(gulp.dest(path.join(build, 'js')))
 });
 
 // Utilities
