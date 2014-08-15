@@ -63,6 +63,7 @@ gulp.task('js', function() {
 gulp.task('dev', function() {
   gulp.watch(webapp + '/less/**', ['less']);
   gulp.watch(webapp + '/js/**', ['js']);
+  gulp.watch(webapp + '/index.html', ['html']);
 });
 
 gulp.task('tdd', function (done) {
