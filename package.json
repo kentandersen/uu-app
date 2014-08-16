@@ -12,7 +12,10 @@
   "dependencies": {
     "express": "~4.4.3",
     "backbone": "^1.1.2",
-    "jquery": "^2.1.1"
+    "jquery": "^2.1.1",
+    "glob": "~4.0.5",
+    "q": "~1.0.1",
+    "node-cache": "~1.0.0"
   },
   "devDependencies": {
     "gulp": "^3.8.7",

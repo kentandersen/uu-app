@@ -13,10 +13,9 @@ app.all('*', function(req, res, next) {
 
 app.use(express.static(path.join(__dirname, "build")));
 
-// json api
-app.get('/rest/numbers', function(req, res) {
-    res.json([1,3,4,5,6,7,7]);
-});
+
+// setup resources
+require("./src/rest/docs/docs.resource").init(app);
 
 
 // if on port is set, use port.
