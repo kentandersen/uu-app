@@ -19,19 +19,10 @@ h1, h2, h3, h4, h5, h6,
 
 h1, 
 .h1 {
-  position:relative;
+ 
   padding-bottom:1rem;
   margin-bottom:1.2rem;
   color:@gray-light;
-  &:after {
-    content: ' ';
-    width:2rem;
-    border-bottom:2px solid @blue-light;
-    position: absolute;
-    bottom: 0;
-    left:0;
-  } 
-
 }
 
 
@@ -57,6 +48,33 @@ p {
   line-height: 1.4;
 }
 
+
+.detail { // kortvisning
+  header, .article-body, aside { 
+    padding:2rem;
+  }
+}
+
+.article-body {
+  background: @gray-light;
+  color:@gray-darker;
+}
+
+.decorated { // Fancy pants, liten, fin og kort understreking, f.eks på H1.
+  position:relative;
+  &:after {
+    content: ' ';
+    width:2rem;
+    border-bottom:2px solid @blue-light;
+    position: absolute;
+    bottom: 0;
+    left:0;
+  } 
+}
+
+a {
+  color: @blue-light;
+}
 
 // Alignment
 .text-left           { text-align: left; }
