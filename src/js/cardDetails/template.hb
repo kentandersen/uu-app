@@ -20,6 +20,11 @@
 
                 </header>
 
+                <figure>
+                  <img src="http://placekitten.com/1020/400" alt="Katt"/>
+
+                </figure>
+
 
                 <div class="article-body">
 
