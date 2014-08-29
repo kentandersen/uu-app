@@ -1,4 +1,17 @@
-<article id="phase-4">
+<header class="siteheader group">
+<!-- Navigasjon, logo etc -->
+  <h1>BEKKUU logo!</h1>
+
+<a href="/" class="closebtn">
+  <span class="visuallyhidden">Tilbake til forside</span>
+</a>
+
+</header>
+
+
+
+
+<article class="detail">
 
                 <header>
                     <h1>Skjemaer</h1>
@@ -35,7 +48,7 @@ For blinde er det alfa og omega at navnet på input feltet er markert før selve
 
             <aside>
               <section>
-              <h1 class="h2">Referanser og ressurser</h1>
+              <h2>Referanser og ressurser</h2>
               <ul>
                 <li>
                   <a href="http://uu.difi.no/veiledning/suksesskriterier/333-forslag-ved-feil">
@@ -53,9 +66,9 @@ http://uu.difi.no/veiledning/suksesskriterier/322-inndata
               </ul>
 </section>
 <section>
-<h1 class="h2">
+<h2>
 Relevante og beslektede temaer
-</h1>
+</h2>
 <ul>
 <li>Yada yada</li>
 </ul>

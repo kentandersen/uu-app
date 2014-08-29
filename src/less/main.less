@@ -11,6 +11,7 @@ body {
     color: @gray-light;
     font-familiy: Georgia;
     font-size: 1rem;
+
 }
 
 .container {
@@ -19,6 +20,47 @@ body {
 	padding-left: 1.5625em;
 	padding-right: 1.5625em;
 	max-width: 63em;
+}
+
+.visuallyhidden { // leses opp av skjermleser
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+
+.siteheader {
+	position:relative;
+}
+
+.closebtn {
+	display:inline-block;
+	&:after {
+		padding:1rem;
+		background:@green-light;
+		display:inline-block;
+		position:absolute;
+		top:0;
+		right:0;
+		content:'X';
+		color:#fff;
+		font-size:2rem;
+		
+		font-weight:bold;
+	}
+}
+
+.group:before, .group:after {
+    content: '';
+    display: table;
+}
+.group:after {
+    clear: both;
 }
 
 
