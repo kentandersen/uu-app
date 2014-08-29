@@ -1,6 +1,6 @@
 <header class="siteheader group">
 <!-- Navigasjon, logo etc -->
-  <h1>BEKKUU logo!</h1>
+  <h1 class="logo">BEKKUU logo!</h1>
 
 <a href="/" class="closebtn">
   <span class="visuallyhidden">Tilbake til forside</span>
@@ -14,7 +14,7 @@
 <article class="detail">
 
                 <header>
-                    <h1>Skjemaer</h1>
+                    <h1 class="decorated">Skjemaer</h1>
 
                     <p class="lead">Det er mange retningslinjer om hva som er god UX når man lager skjemaer. Her fokuserer vi på hva som er viktig å tenke over ved skjemadesign ifht universell utforming.</p>
 
