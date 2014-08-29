@@ -13,7 +13,7 @@ var changePage = function(view) {
   }
 
   currentElement = view;
-  $("#main").html(currentElement.$el);
+  $("main").html(currentElement.$el);
 };
 
 
@@ -23,6 +23,10 @@ var Router = Backbone.Router.extend({
     "":               "listCards",
     "liste":          "listCards",
     "kort/:key":      "cardDetails"
+  },
+
+  initialize: function(options) {
+    this.nav = options.nav;
   },
 
   listCards: function() {
