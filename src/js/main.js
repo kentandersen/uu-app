@@ -1,10 +1,7 @@
-var template = require("./template.hb");
-var $ = require('jquery');
-var Backbone = require('backbone');
-Backbone.$ = $;
+var Backbone = require("backbone");
+var BaseView = require("./base/view");
+var Router = require("./router");
 
-var html = template({title: "An instantiated template!", name: "David"});
+var router = new Router();
 
-var view = new Backbone.View({
-    el: "#main"
-});
+Backbone.history.start();
