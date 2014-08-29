@@ -1,9 +1,21 @@
+var $ = require("jquery");
 var Backbone = require("backbone");
 var CardListView = require("./cardList/cardList.view");
 var CardDetailsView = require("./cardDetails/cardDetails.view");
 var CardCollection = require("./card/cards");
 
 var cardCollection = new CardCollection();
+
+var currentElement;
+var changePage = function(view) {
+  if(currentElement && currentElement.remove) {
+    currentElement.remove();
+  }
+
+  currentElement = view;
+  $("main").html(currentElement.$el);
+};
+
 
 var Router = Backbone.Router.extend({
 
@@ -16,18 +28,23 @@ var Router = Backbone.Router.extend({
   listCards: function() {
     var cardListView = new CardListView({
       collection: cardCollection
-    })
+    });
+
+    changePage(cardListView);
     cardListView.render();
+
+    cardCollection.fetch();
   },
 
   cardDetails: function(key) {
     var cardModel = cardCollection.get(key);
     var cardDetailsView = new CardDetailsView({
-      el: "main",
       model: cardModel
     });
+
+    changePage(cardDetailsView);
     cardDetailsView.render();
-  }
+  },
 });
 
 module.exports = Router;
