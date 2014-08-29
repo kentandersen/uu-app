@@ -9,7 +9,7 @@ var documentCache = new NodeCache({ stdTTL: 60, checkperiod: 10 });
 var metaCache     = new NodeCache({ stdTTL: 60, checkperiod: 10 });
 
 var parseDocumentObject = function(doc){
-    return data;
+    return doc;
 };
 
 var parseMetaObject = function(doc){

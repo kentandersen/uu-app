@@ -3,11 +3,11 @@ var template = require("./template.hb");
 
 var CardDetailsView = BaseView.extend({
 
-    template: template,
+  template: template,
 
-    render: function() {
-        this.renderTemplate();
-    }
+  render: function() {
+      this.renderTemplate();
+  }
 
 });
 
