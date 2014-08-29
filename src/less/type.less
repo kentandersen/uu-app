@@ -2,6 +2,10 @@
 // Typography
 // --------------------------------------------------
 
+body {
+  font-family: @font-family-serif;
+}
+
 
 // Headings
 // -------------------------
@@ -11,12 +15,23 @@ h1, h2, h3, h4, h5, h6,
   font-family: @headings-font-family;
   font-weight: @headings-font-weight;
   line-height: @headings-line-height;
+}
 
-  small,
-  .small {
-    font-weight: normal;
-    line-height: 1;
-  }
+h1, 
+.h1 {
+  position:relative;
+  padding-bottom:1rem;
+  margin-bottom:1.2rem;
+  color:@gray-light;
+  &:after {
+    content: ' ';
+    width:2rem;
+    border-bottom:2px solid @blue-light;
+    position: absolute;
+    bottom: 0;
+    left:0;
+  } 
+
 }
 
 
@@ -36,14 +51,10 @@ p {
 }
 
 .lead {
+  font-family: @headings-font-family;
   font-size: 1.15rem;
   font-weight: 300;
   line-height: 1.4;
-}
-
-// Undo browser default styling
-cite {
-  font-style: normal;
 }
 
 

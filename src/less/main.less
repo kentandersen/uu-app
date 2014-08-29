@@ -3,17 +3,22 @@
 @import "mixins.less";
 @import "normalize.less";
 @import "type.less";
+@import "webfonts.less";
 
 
 body {
-    background: #1b1b1b;
-    color: white;
+    background: #2f2f2f;
+    color: @gray-light;
     font-familiy: Georgia;
-    font-size: 17px;
+    font-size: 1rem;
+}
+
+.container {
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 1.5625em;
+	padding-right: 1.5625em;
+	max-width: 63em;
 }
 
 
-h1 {
-	font-size: 5em;
-	color:yellow;
-}
