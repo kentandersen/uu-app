@@ -21,8 +21,10 @@ var Router = Backbone.Router.extend({
   },
 
   cardDetails: function(key) {
+    var cardModel = cardCollection.get(key);
     var cardDetailsView = new CardDetailsView({
-
+      el: "main",
+      model: cardModel
     });
     cardDetailsView.render();
   }
