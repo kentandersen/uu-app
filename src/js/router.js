@@ -13,7 +13,7 @@ var changePage = function(view) {
   }
 
   currentElement = view;
-  $("main").html(currentElement.$el);
+  $("#main").html(currentElement.$el);
 };
 
 
