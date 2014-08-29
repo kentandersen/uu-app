@@ -1,8 +1,7 @@
+var Backbone = require("backbone");
 var BaseView = require("./base/view");
-var template = require("./template.hb");
+var Router = require("./router");
 
-var html = template({title: "An instantiated template!", name: "David"});
+var router = new Router();
 
-var view = new BaseView({
-    el: "#main"
-});
+Backbone.history.start();
