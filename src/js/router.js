@@ -45,9 +45,9 @@ var Router = Backbone.Router.extend({
     var cardDetailsView = new CardDetailsView({
       model: cardModel
     });
+    cardModel.fetch();
 
     changePage(cardDetailsView);
-    cardDetailsView.render();
   },
 });
 
