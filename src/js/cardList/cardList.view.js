@@ -5,6 +5,8 @@ var CardListView = BaseView.extend({
 
   template: template,
 
+  className: "card-list",
+
   initialize: function() {
     this.listenTo(this.collection, "request", this.renderLoading);
     this.listenTo(this.collection, "sync", this.render);
@@ -15,7 +17,7 @@ var CardListView = BaseView.extend({
   },
 
   renderLoading: function() {
-    this.$el.html("Laster spennende ting...")
+    this.$el.html("Laster spennende ting...");
   }
 
 });
