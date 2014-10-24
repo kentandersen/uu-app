@@ -15,23 +15,16 @@ body {
 
 }
 
+//
+//	"Scaffolding" + grid
+// ----------------------------------------
+
 .container {
 	margin-right: auto;
 	margin-left: auto;
 	padding-left: 1.5625em;
 	padding-right: 1.5625em;
 	max-width: 63em;
-}
-
-.visuallyhidden { // leses opp av skjermleser
-	border: 0;
-	clip: rect(0 0 0 0);
-	height: 1px;
-	margin: -1px;
-	overflow: hidden;
-	padding: 0;
-	position: absolute;
-	width: 1px;
 }
 
 
@@ -62,7 +55,9 @@ body {
 	text-align: center;
 }
 
-// ------
+//
+//	Card detailed view
+// ----------------------------------------
 
 .detail { // kortvisning
   header, .article-body, aside { 
@@ -90,6 +85,16 @@ body {
   color:@gray-darker;
 }
 
+
+
+
+
+
+
+//
+//	Utilities
+// ----------------------------------------
+
 .decorated { // Fancy pants, liten, fin og kort understreking, f.eks på H1.
   position:relative;
   &:after {
@@ -102,39 +107,16 @@ body {
   } 
 }
 
-// -------
-
-.grid-view {
-	list-style: none;
-	li {
-		float:left;
-		width:33%;
-		padding:0 1rem 0 1rem;
-		margin-bottom:2rem;
-	}
-	a {
-		display:block;
-		border-radius: 50%;
-		background: @purple;
-		padding:7rem 0;
-		text-transform: uppercase;
-		font-size:1.2em;
-		text-align: center;
-		text-decoration: none;
-		color:#000;
-
-	}
+.visuallyhidden { // leses opp av skjermleser
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
 }
-
-
-
-
-
-// -------
-
-
-
-
 
 .group:before, .group:after { // clearfix
     content: '';
