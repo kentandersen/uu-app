@@ -5,7 +5,9 @@ var CardCollection = BaseCollection.extend({
 
   model: CardModel,
 
-  url: "rest/kort"
+  url: "rest/kort",
+
+  comparator: "title"
 
 });
 
