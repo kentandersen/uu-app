@@ -3,6 +3,9 @@ var template = require("./template.hb");
 
 var CardDetailsView = BaseView.extend({
 
+  className: "detail",
+  tagName: "article",
+
   template: template,
 
   initialize: function() {
