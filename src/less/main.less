@@ -4,7 +4,9 @@
 @import "normalize.less";
 @import "type.less";
 @import "webfonts.less";
+@import "navigation.less";
 @import "cardList.less";
+@import "categories.less";
 
 
 body {
@@ -32,35 +34,12 @@ body {
 	position:relative;
 }
 
-.closebtn { // lukkeknappen i øvre høyre hjørne på kortvisning
-	display:inline-block;
-	&:after {
-		padding:1rem 1.2rem;
-		line-height:1;
-		border-radius: 50%; // ish
-		background:@green-light;
-		display:inline-block;
-		position:absolute;
-		top:0;
-		right:0;
-		content:'X';
-		color:#fff;
-		font-size:2rem;
-
-		font-weight:bold;
-	}
-}
-
-.logo {
-	text-align: center;
-}
-
 //
 //	Card detailed view
 // ----------------------------------------
 
 .detail { // kortvisning
-  header, .article-body, aside { 
+  header, .article-body, aside {
     padding:2rem;
   }
   header, aside {
@@ -77,7 +56,7 @@ body {
 	  }
   }
 
-  
+
 }
 
 .article-body {
@@ -104,7 +83,7 @@ body {
     position: absolute;
     bottom: 0;
     left:0;
-  } 
+  }
 }
 
 .visuallyhidden { // leses opp av skjermleser

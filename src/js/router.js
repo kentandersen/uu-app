@@ -1,5 +1,6 @@
 var $ = require("jquery");
 var Backbone = require("backbone");
+var NavigationView = require("./navigation/navigation.view");
 var CardListView = require("./cardList/cardList.view");
 var CardDetailsView = require("./cardDetails/cardDetails.view");
 var CardCollection = require("./card/cards");
@@ -27,7 +28,11 @@ var Router = Backbone.Router.extend({
   },
 
   initialize: function(options) {
-    this.nav = options.nav;
+    this.navigationView = new NavigationView({
+      el: "nav"
+    });
+
+    this.on("route", this.navigationView.render, this.navigationView);
   },
 
   listCards: function() {
@@ -35,7 +40,7 @@ var Router = Backbone.Router.extend({
       collection: cardCollection
     });
 
-    changePage(cardListView);
+    changePage.call(this, cardListView);
     cardListView.render();
 
     cardCollection.fetch();
@@ -49,7 +54,7 @@ var Router = Backbone.Router.extend({
     });
     cardModel.fetch();
 
-    changePage(cardDetailsView);
+    changePage.call(this, cardDetailsView);
   },
 });
 

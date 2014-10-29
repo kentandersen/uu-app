@@ -1,0 +1,33 @@
+nav {
+    padding: 1rem 0;
+
+    .closebtn { // lukkeknappen i øvre høyre hjørne på kortvisning
+        display:inline-block;
+        &:after {
+            padding:1rem 1.2rem;
+            line-height:1;
+            border-radius: 50%; // ish
+            background:@green-light;
+            display:inline-block;
+            position:absolute;
+            top:1rem;
+            right:1rem;
+            content:'X';
+            color:#fff;
+            font-size:2rem;
+
+            font-weight:bold;
+        }
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    h1 {
+        line-height: 1em;
+        margin: 0;
+        padding: 0;
+    }
+
+}

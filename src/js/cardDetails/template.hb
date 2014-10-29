@@ -1,15 +1,3 @@
-<header class="siteheader group">
-<!-- Navigasjon, logo etc -->
-  <h1 class="logo">BEKKUU logo!</h1>
-
-<a href="/" class="closebtn">
-  <span class="visuallyhidden">Tilbake til forside</span>
-</a>
-
-</header>
-
-
-
 
 <article class="detail">
 

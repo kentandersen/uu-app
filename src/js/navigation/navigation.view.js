@@ -6,7 +6,9 @@ var NavigationView = BaseView.extend({
   template: template,
 
   render: function() {
-    this.renderTemplate();
+    this.renderTemplate({
+        showBackButton: window.location.hash !== ""
+    });
   }
 
 });
