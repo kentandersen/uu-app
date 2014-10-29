@@ -1,12 +1,13 @@
 
-@import "variables.less";
-@import "mixins.less";
-@import "normalize.less";
-@import "type.less";
-@import "webfonts.less";
-@import "navigation.less";
-@import "cardList.less";
-@import "categories.less";
+@import "common/variables.less";
+@import "common/mixins.less";
+@import "common/normalize.less";
+@import "common/type.less";
+@import "common/webfonts.less";
+@import "navigation/navigation.less";
+@import "cardList/cardList.less";
+@import "cardList/categories.less";
+@import "cardDetails/cardDetails.less";
 
 
 body {
@@ -33,41 +34,6 @@ body {
 .siteheader {
 	position:relative;
 }
-
-//
-//	Card detailed view
-// ----------------------------------------
-
-.detail { // kortvisning
-  header, .article-body, aside {
-    padding:2rem;
-  }
-  header, aside {
-    background: @gray-darker;
-  }
-
-  figure {
-  	padding:0;
-  	margin:0;
-  	img {
-	  	max-width:100%;
-	  	height:auto;
-	  	vertical-align: bottom;
-	  }
-  }
-
-
-}
-
-.article-body {
-  background: @gray-light;
-  color:@gray-darker;
-}
-
-
-
-
-
 
 
 //

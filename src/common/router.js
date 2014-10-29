@@ -1,10 +1,10 @@
 var $ = require("jquery");
 var Backbone = require("backbone");
-var NavigationView = require("./navigation/navigation.view");
-var CardListView = require("./cardList/cardList.view");
-var CardDetailsView = require("./cardDetails/cardDetails.view");
-var CardCollection = require("./card/cards");
-var CardModel = require("./card/card");
+var NavigationView = require("../navigation/navigation.view");
+var CardListView = require("../cardList/cardList.view");
+var CardDetailsView = require("../cardDetails/cardDetails.view");
+var CardCollection = require("../card/cards");
+var CardModel = require("../card/card");
 
 var cardCollection = new CardCollection();
 

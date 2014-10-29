@@ -21,7 +21,7 @@ var config = path.join(__dirname, 'config');
 
 // Test
 gulp.task('jshint', function() {
-  gulp.src([webapp + '/js/**/*.js'])
+  gulp.src([webapp + '/**/*.js'])
     .pipe(jshint())
     .pipe(jshint.reporter('jshint-stylish'))
     .pipe(jshint.reporter('fail'))
@@ -34,12 +34,12 @@ gulp.task('image', function() {
 });
 
 gulp.task('less', function() {
-  return gulp.src(webapp + '/less/main.less')
+  return gulp.src(webapp + '/main.less')
     .pipe(sourcemaps.init())
     .pipe(less())
     .pipe(sourcemaps.write())
     .pipe(rename("styles.css"))
-    .pipe(gulp.dest(path.join(build, 'css')));
+    .pipe(gulp.dest(build));
 });
 
 gulp.task('html', function() {
@@ -51,18 +51,22 @@ gulp.task('js', function() {
   var handlebars = hbsfy.configure({
     extensions: ["hb"]
   });
-  return gulp.src(webapp + '/js/main.js')
+  return gulp.src(webapp + '/main.js')
     .pipe(browserify({
       transform: [handlebars],
       debug: true
     }))
-    .pipe(gulp.dest(path.join(build, 'js')))
+    .pipe(gulp.dest(build))
 });
 
 // Utilities
+gulp.task('clean', function(done) {
+  rimraf(build, done);
+});
+
 gulp.task('dev', function() {
-  gulp.watch(webapp + '/less/**', ['less']);
-  gulp.watch(webapp + '/js/**', ['js']);
+  gulp.watch(webapp + '/**/*.less', ['less']);
+  gulp.watch(webapp + '/**/*.js', ['js']);
   gulp.watch(webapp + '/index.html', ['html']);
 });
 
