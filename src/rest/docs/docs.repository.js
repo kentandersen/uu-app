@@ -16,7 +16,8 @@ var parseMetaObject = function(doc){
     return {
         key: doc.key,
         title: doc.title,
-        category: doc.category
+        category: doc.category,
+        importance: doc.importance
     };
 };
 
