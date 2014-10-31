@@ -1,4 +1,5 @@
 {
     "title":"Navigasjon",
-    "category": "navigation"
+    "category": "navigation",
+    "importance": 2
 }
