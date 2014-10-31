@@ -1,47 +1,94 @@
+// Mobile first
+
 .card-list {
     list-style: none;
+    margin:0;
+    padding:0;
 }
 
-
-//
-//  Card list grid view
-// ----------------------------------------
-
 .grid-view {
-
-    //  Quick & dirty
-    //  REFAKTORERES TIL FLEX!
-    //
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: row;
+   flex-wrap: wrap;
+   flex-flow: row wrap;
+   align-content: flex-end;
+   margin-right:-1rem;
 
     margin: 0 auto;
     padding: 0;
 
     li {
-        float:left;
-        width:33%;
-        padding:0 1rem 0 1rem;
-        margin-bottom:2rem;
+        display:flex;
+        margin-right:1rem;
+        margin-bottom:1rem;      
     }
 
     a {
         display:block;
         position:relative;
         border-radius: 50%;
-        height:12rem;
-        width:12rem;
+        height:10rem;
+        width:10rem;
         text-transform: uppercase;
-        font-size:1.2em;
+        font-size:1.2rem;
+        font-weight: 600; // medium
 
         text-decoration: none;
         color:#000;
         span {
             display:block;
             position:absolute;
-            top:47%;
+            top:50%;
             width:100%;
+            margin-top: -0.6rem;
             text-align: center;
 
         }
 
     }
+
 }
+
+
+
+
+// Pad
+@media (min-width: 48em) { // 48em = 768px
+
+    // Alt som gjelder fra pad og opp. 
+    // Flexbox herfra og større skjerm
+
+    .grid-view {
+        a {
+            // Større sirkler på større skjerm
+            // Eventuelt: Bumpe opp font (tekst OG sirkel blir større?)
+            height:12rem;
+            width:12rem;
+        }
+    }
+
+
+
+}
+
+
+// Desktop
+
+@media (min-width: 60em) { // 60em = 960px
+
+    // Egne ting kun for større flater
+
+
+
+
+
+}
+
+
+
+
+
+
+
