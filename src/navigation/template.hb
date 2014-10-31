@@ -1,4 +1,6 @@
-<h1 class="logo">BEKKUU logo!</h1>
+<div class="logo">
+<img src="images/uu-logo.png" alt="logo"/>
+</div>
 
 {{#if showBackButton}}
 <a href="#" class="closebtn">
