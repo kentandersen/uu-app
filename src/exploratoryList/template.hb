@@ -1,7 +1,7 @@
 <nav class="navigation" role="navigation">
-<ul class="card-list grid-view group">
+<ul class="group">
     {{#each this}}
-        <li><a href="#kort/{{key}}" class="colorid-{{colorid}}">
+        <li><a href="#kort/{{key}}" class="importance-{{importance}} colorid-{{colorid}}">
             <span>{{this.title}}</span>
         </a></li>
     {{/each}}

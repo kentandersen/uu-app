@@ -1,5 +1,7 @@
 var BaseModel = require("../base/model");
 
+var AVAILABLE_COLORS_COUNT = 17;
+
 var CardModel = BaseModel.extend({
 
   idAttribute: "key",
@@ -8,6 +10,10 @@ var CardModel = BaseModel.extend({
     "title": "",
     "key": "",
     "detailsUrl": ""
+  },
+
+  getColorId: function() {
+    return this.collection.indexOf(this) % AVAILABLE_COLORS_COUNT;
   }
 });
 
