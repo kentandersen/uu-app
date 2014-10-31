@@ -1,11 +1,17 @@
+.toggle-nav-mode {
+    float:right;
+}
+
 
 label.nav-mode {
     display: inline-block;  
     padding: 14px 0 14px 0;    
     cursor: pointer;
-    border:1px solid red;
+    border:5px solid #2f2f2f;
+    border-radius: 50%;
     height:42px;
     width:42px;
+    background: #464646;
     &.icon-grid {
         background: url('../images/icon-grid-view.png') no-repeat center center;
     }
@@ -14,6 +20,9 @@ label.nav-mode {
     }
 }
 
+input:checked + label.nav-mode {
+    border-color: #a4a4a4;
+}
 
 
 nav {
