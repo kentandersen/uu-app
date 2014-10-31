@@ -12,8 +12,15 @@ var CardListView = BaseView.extend({
     this.listenTo(this.collection, "sync", this.render);
   },
 
-  render: function() {
-    this.renderTemplate(this.collection.toJSON());
+   render: function() {
+    var data = this.collection.map(function(model) {
+      var attrs = model.toJSON();
+      attrs.colorid = model.getColorId();
+
+      return attrs;
+    });
+
+    this.renderTemplate(data);
   },
 
   renderLoading: function() {
