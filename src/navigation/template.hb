@@ -5,11 +5,13 @@
 
 <div class="toggle-nav-mode">
 
-<label for="togggle-bubble-view" class="nav-mode icon-bubble">Utforskende navigeringsmodus</label>
-<input id="togggle-bubble-view" checked="checked" class="toggle toggle-bubble" type="radio" name="nav-mode"/>
 
-<label for="togggle-grid-view" class="nav-mode icon-grid">Meny i alfabetisk sortert rekkefølge</label>
+<input id="togggle-bubble-view" checked="checked" class="toggle toggle-bubble" type="radio" name="nav-mode"/>
+<label for="togggle-bubble-view" class="nav-mode icon-bubble">Utforskende navigeringsmodus</label>
+
 <input id="togggle-grid-view" class="toggle toggle-grid" type="radio" name="nav-mode"/>
+<label for="togggle-grid-view" class="nav-mode icon-grid">Meny i alfabetisk sortert rekkefølge</label>
+
 
 </div>
 
