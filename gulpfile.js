@@ -29,7 +29,7 @@ gulp.task('jshint', function() {
 
 gulp.task('image', function() {
   return gulp.src([webapp + '/images/**/*'])
-    .pipe(imagemin({optimizationLevel: 5}))
+    // .pipe(imagemin({optimizationLevel: 5}))
     .pipe(gulp.dest(path.join(build, 'images')));
 });
 
