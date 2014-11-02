@@ -4,7 +4,7 @@
 </header>
 
 {{#if figure}}
-<figure>
+<figure class="colorid-{{colorid}}" {{#if figureBackgroundColor}}style="background-color:{{figureBackgroundColor}}"{{/if}}>
   <img src="{{figure}}" alt="Katt"/>
 </figure>
 {{/if}}

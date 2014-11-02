@@ -14,7 +14,9 @@ var CardDetailsView = BaseView.extend({
   },
 
   render: function() {
-    this.renderTemplate(this.model.toJSON());
+    var data = this.model.toJSON();
+    data.colorid = this.model.getColorId();
+    this.renderTemplate(data);
   }
 
 });
