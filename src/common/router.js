@@ -23,7 +23,7 @@ var changePage = function(view) {
 var Router = Backbone.Router.extend({
 
   routes: {
-    "":               "listCards",
+    "":               "listCards",//"exploratory",
     "liste":          "listCards",
     "kort/:key":      "cardDetails"
   },
@@ -42,7 +42,7 @@ var Router = Backbone.Router.extend({
     });
 
     changePage.call(this, exploratoryView);
-    exploratoryView.render();
+    // exploratoryView.render();
 
     cardCollection.fetch();
   },

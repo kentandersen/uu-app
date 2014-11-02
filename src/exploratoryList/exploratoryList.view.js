@@ -1,5 +1,3 @@
-// require("../../lib/isotope/isotope.pkgd");
-// var Packery = window.Packery;
 
 var BaseView = require("../base/view");
 var template = require("./template.hb");
