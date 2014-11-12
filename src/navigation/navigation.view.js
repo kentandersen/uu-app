@@ -6,8 +6,14 @@ var NavigationView = BaseView.extend({
   template: template,
 
   render: function() {
+    var hash = window.location.hash.substr(1);
+
     this.renderTemplate({
-        showBackButton: window.location.hash !== ""
+        isListe         : hash === "liste",
+        isExploratory   : hash === "exploratory",
+        showBackButton  : hash !== "" &&
+                          hash !== "liste" &&
+                          hash !== "exploratory"
     });
   }
 

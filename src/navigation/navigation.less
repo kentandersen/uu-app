@@ -1,32 +1,3 @@
-.toggle-nav-mode {
-    float:right;
-    position: relative;
-    right: 2rem; // hack for alignment med kuler/kort før demo
-}
-
-
-label.nav-mode {
-    display: inline-block;  
-    padding: 14px 0 14px 0;    
-    cursor: pointer;
-    border:5px solid #2f2f2f;
-    border-radius: 50%;
-    height:42px;
-    width:42px;
-    background: #464646;
-    &.icon-grid {
-        background: url('../images/icon-grid-view.png') no-repeat center center;
-    }
-    &.icon-bubble {
-        background: url('../images/icon-bubble-view.png') no-repeat center center;
-    }
-}
-
-input:checked + label.nav-mode {
-    border-color: #a4a4a4;
-}
-
-
 nav {
     padding: 1rem 0;
 
@@ -58,5 +29,33 @@ nav {
         margin: 0;
         padding: 0;
     }
+
+    .toggle-nav-mode {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+
+    .nav-mode {
+        display: inline-block;
+        padding: 14px 0 14px 0;
+        cursor: pointer;
+        border:5px solid transparent;
+        border-radius: 50%;
+        height:42px;
+        width:42px;
+        background: #464646;
+        &.icon-grid {
+            background: url('../images/icon-grid-view.png') no-repeat center center;
+        }
+        &.icon-bubble {
+            background: url('../images/icon-bubble-view.png') no-repeat center center;
+        }
+    }
+
+    .nav-mode.checked {
+        border-color: #a4a4a4;
+    }
+
 
 }
