@@ -66,7 +66,7 @@ gulp.task('clean', function(done) {
 
 gulp.task('dev', function() {
   gulp.watch(webapp + '/**/*.less', ['less']);
-  gulp.watch(webapp + '/**/*.js', ['js']);
+  gulp.watch(webapp + '/**/*.{js,hb}', ['js']);
   gulp.watch(webapp + '/index.html', ['html']);
 });
 
