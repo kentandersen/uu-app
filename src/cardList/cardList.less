@@ -8,15 +8,22 @@
 
 .grid-view {
    display: flex;
-   align-items: center;
-   justify-content: center;
-   flex-direction: row;
+   display:-webkit-flex;
+
    flex-wrap: wrap;
-   flex-flow: row wrap;
-   align-content: flex-end;
+   -webkit-flex-wrap: wrap;
+   
+   //flex-direction: row;
+   //flex-flow: row wrap;
+   //align-content: flex-end;
+
+
+   //align-items: center;
+   //justify-content: center;
 
     li {
         display:flex;
+        display:-webkit-flex;
         //flex: 1 1 auto;
         margin-right:2rem;
         margin-bottom:2rem;      
