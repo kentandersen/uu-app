@@ -1,11 +1,7 @@
-<div class="container logo">
+<div class="container logo-container">
 
     <img src="images/uu-logo.png" alt="logo"/>
-
-
-</div>
-
-{{#if showBackButton}}
+    {{#if showBackButton}}
     <a href="#" class="closebtn">
         <span class="visuallyhidden">Tilbake til forside</span>
     </a>
@@ -23,7 +19,7 @@
         </a>
 
     </div>
-
-
-
 {{/if}}
+
+</div>
+

@@ -8,18 +8,19 @@
 
 .grid-view {
    display: flex;
-   align-items: center;
-   justify-content: center;
-   flex-direction: row;
+   display:-webkit-flex;
+
    flex-wrap: wrap;
-   flex-flow: row wrap;
-   align-content: flex-end;
+   -webkit-flex-wrap: wrap;
+   justify-content: space-around;
 
     li {
         display:flex;
-        //flex: 1 1 auto;
-        margin-right:2rem;
-        margin-bottom:2rem;      
+        display:-webkit-flex;      
+        margin-bottom:2rem; // tilfeldig valgt-ish avstand
+        &:nth-child(n+4)  {
+            margin-right:0;
+        }   
     }
 
     a {

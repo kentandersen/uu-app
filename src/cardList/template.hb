@@ -1,5 +1,5 @@
 <nav class="navigation" role="navigation">
-<ul class="card-list grid-view group">
+<ul class="card-list grid-view">
     {{#each this}}
         <li><a href="#kort/{{key}}" class="colorid-{{colorid}}">
             <span>{{this.title}}</span>
