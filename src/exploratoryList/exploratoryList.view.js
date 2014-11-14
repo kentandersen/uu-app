@@ -10,14 +10,14 @@ var CardListView = BaseView.extend({
 
   initialize: function() {
     this.listenTo(this.collection, "request", this.renderLoading);
-    this.listenTo(this.collection, "sync", this.syncHandler);
+    this.listenTo(this.collection, "sync", this.render);
 
     this.collection.comparator = "importance";
     this.collection.sort();
   },
 
   render: function() {
-    // var size = this.getElementSize();
+    var size = this.getElementSize();
 
     var data = this.collection.map(function(model) {
       var attrs = model.toJSON();
@@ -29,7 +29,7 @@ var CardListView = BaseView.extend({
 
     this.renderTemplate(data);
 
-    placement(this.$(".item a"));
+    placement(this.$(".item a"), size.height, size.width);
   },
 
   renderLoading: function() {
@@ -41,12 +41,6 @@ var CardListView = BaseView.extend({
       width: this.el.offsetWidth,
       height: this.el.offsetHeight
     };
-  },
-
-  syncHandler: function() {
-    this.collection.comparator = "importance";
-    this.collection.sort();
-    this.render();
   }
 
 });

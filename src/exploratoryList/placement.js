@@ -4,24 +4,29 @@ var $ = require("jquery");
 module.exports = function($elements, totalHeight, totalWidth) {
 
     var min_x = 0;
-    var max_x = 600; // totalWidth
+    var max_x =  totalWidth;
     var min_y = 0;
-    var max_y = 600; // totalHeight
+    var max_y = totalHeight;
     var filled_areas = [];
 
     $elements.each(function() {
+        var area;
         var rand_x=0;
         var rand_y=0;
-        var area;
 
         var width = $(this).width();
         var height = $(this).height();
 
+        var max_x_subtracted = max_x - width;
+        var max_y_subtracted = max_y - height;
+        var loopCounter = 0;
+
         do {
-            rand_x = Math.round(min_x + ((max_x - min_x)*(Math.random() % 1)));
-            rand_y = Math.round(min_y + ((max_y - min_y)*(Math.random() % 1)));
+            loopCounter++;
+            rand_x = Math.round(min_x + ((max_x_subtracted - min_x)*(Math.random() % 1)));
+            rand_y = Math.round(min_y + ((max_y_subtracted - min_y)*(Math.random() % 1)));
             area = {x: rand_x, y: rand_y, width: width, height: height};
-        } while(check_overlap(area));
+        } while(check_overlap(area) && loopCounter < 5000);
 
         filled_areas.push(area);
 
