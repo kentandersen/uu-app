@@ -10,17 +10,17 @@
    display: flex;
    display:-webkit-flex;
 
-   flex-wrap: wrap;
-   -webkit-flex-wrap: wrap;
-   justify-content: space-around;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
 
     li {
         display:flex;
-        display:-webkit-flex;      
-        margin-bottom:2rem; // tilfeldig valgt-ish avstand
-        &:nth-child(n+4)  {
-            margin-right:0;
-        }   
+        display:-webkit-flex; 
+        margin-bottom:2em; // tilfeldig valgt verdi (ish). Finn på noe smartere.
+          
     }
 
     a {
