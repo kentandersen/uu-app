@@ -12,21 +12,15 @@
 
    flex-wrap: wrap;
    -webkit-flex-wrap: wrap;
-   
-   //flex-direction: row;
-   //flex-flow: row wrap;
-   //align-content: flex-end;
-
-
-   //align-items: center;
-   //justify-content: center;
+   justify-content: space-around;
 
     li {
         display:flex;
-        display:-webkit-flex;
-        //flex: 1 1 auto;
-        margin-right:2rem;
-        margin-bottom:2rem;      
+        display:-webkit-flex;      
+        margin-bottom:2rem; // tilfeldig valgt-ish avstand
+        &:nth-child(n+4)  {
+            margin-right:0;
+        }   
     }
 
     a {
