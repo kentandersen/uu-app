@@ -16,35 +16,16 @@
 
     li {
         display:flex;
-        display:-webkit-flex;      
+        display:-webkit-flex;
         margin-bottom:2rem; // tilfeldig valgt-ish avstand
         &:nth-child(n+4)  {
             margin-right:0;
-        }   
+        }
     }
 
-    a {
-        display:block;
-        position:relative;
-        border-radius: 50%;
+    .bulb {
         height:10rem;
         width:10rem;
-        text-transform: uppercase;
-        font-size:1.2rem;
-        font-weight: 600; // medium
-
-        text-decoration: none;
-        color:#000;
-        span {
-            display:block;
-            position:absolute;
-            top:50%;
-            width:100%;
-            margin-top: -0.6rem;
-            text-align: center;
-
-        }
-
     }
 
 }
@@ -55,7 +36,7 @@
 // Pad
 @media (min-width: 48em) { // 48em = 768px
 
-    // Alt som gjelder fra pad og opp. 
+    // Alt som gjelder fra pad og opp.
     // Flexbox herfra og større skjerm
 
     .grid-view {
