@@ -33,7 +33,7 @@ var CardListView = BaseView.extend({
   },
 
   renderLoading: function() {
-    this.el.innerHTML("Laster spennende ting...");
+    this.el.innerHTML = "Laster spennende ting...";
   },
 
   getElementSize: function () {

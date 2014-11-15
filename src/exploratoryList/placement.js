@@ -14,7 +14,7 @@ module.exports = function(elements, totalHeight, totalWidth) {
         var rand_y = 0;
 
         var width   = element.offsetWidth;
-        var height  = element.offsetHeight
+        var height  = element.offsetHeight;
 
         var max_x_subtracted = max_x - width;
         var max_y_subtracted = max_y - height;
@@ -30,7 +30,7 @@ module.exports = function(elements, totalHeight, totalWidth) {
         filled_areas.push(area);
 
         element.style.left  = rand_x + "px";
-    //     element.style.top   = rand_y + "px";
+        element.style.top   = rand_y + "px";
     });
 
     function check_overlap(area) {
