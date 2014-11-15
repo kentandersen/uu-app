@@ -1,8 +1,7 @@
-var Backbone = require("backbone");
-var $ = require("jquery");
-Backbone.$ = $;
+require("backbone.nativeview");
+var Exoskeleton = require("exoskeleton");
 
-var BaseView = Backbone.View.extend({
+var BaseView = Exoskeleton.NativeView.extend({
 
   renderTemplate: function(template, data) {
     if(!data && typeof template === "object") {
@@ -12,7 +11,7 @@ var BaseView = Backbone.View.extend({
       template = this.template;
     }
 
-    this.$el.html(template(data));
+    this.el.innerHTML = template(data);
   }
 
 });

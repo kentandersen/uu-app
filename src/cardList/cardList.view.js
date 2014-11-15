@@ -24,7 +24,7 @@ var CardListView = BaseView.extend({
   },
 
   renderLoading: function() {
-    this.$el.html("Laster spennende ting...");
+    this.el.innerHTML = "Laster spennende ting...";
   }
 
 });

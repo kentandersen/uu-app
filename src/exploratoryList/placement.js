@@ -1,51 +1,52 @@
 // fra http://stackoverflow.com/questions/6224571/positioning-multiple-random-sized-absolutely-positioned-elements-so-they-dont
-var $ = require("jquery");
 
-module.exports = function($elements, totalHeight, totalWidth) {
+module.exports = function(elements, totalHeight, totalWidth) {
 
-    var min_x = 0;
-    var max_x =  totalWidth;
-    var min_y = 0;
-    var max_y = totalHeight;
-    var filled_areas = [];
+    var minX = 0;
+    var maxX =  totalWidth;
+    var minY = 0;
+    var maxY = totalHeight;
+    var filledAreas = [];
 
-    $elements.each(function() {
+    [].forEach.call(elements, function(element) {
         var area;
-        var rand_x=0;
-        var rand_y=0;
+        var randX = 0;
+        var randY = 0;
 
-        var width = $(this).width();
-        var height = $(this).height();
+        var width  = element.offsetWidth;
+        var height = element.offsetHeight;
 
-        var max_x_subtracted = max_x - width;
-        var max_y_subtracted = max_y - height;
+        var subtractedMaxX = maxX - width;
+        var subtractedMaxY = maxY - height;
         var loopCounter = 0;
 
         do {
             loopCounter++;
-            rand_x = Math.round(min_x + ((max_x_subtracted - min_x)*(Math.random() % 1)));
-            rand_y = Math.round(min_y + ((max_y_subtracted - min_y)*(Math.random() % 1)));
-            area = {x: rand_x, y: rand_y, width: width, height: height};
-        } while(check_overlap(area) && loopCounter < 5000);
+            randX = Math.round(minX + ((subtractedMaxX - minX)*(Math.random() % 1)));
+            randY = Math.round(minY + ((subtractedMaxY - minY)*(Math.random() % 1)));
+            area = {x: randX, y: randY, width: width, height: height};
+        } while(checkOverlap(area) && loopCounter < 5000);
 
-        filled_areas.push(area);
+        filledAreas.push(area);
 
-        $(this).css({left:rand_x, top: rand_y});
+        element.style.left  = randX + "px";
+        element.style.top   = randY + "px";
     });
 
-    function check_overlap(area) {
-        for (var i = 0; i < filled_areas.length; i++) {
+    function checkOverlap(area) {
+        for (var i = 0; i < filledAreas.length; i++) {
 
-            check_area = filled_areas[i];
+            checkArea = filledAreas[i];
 
             var bottom1 = area.y + area.height;
-            var bottom2 = check_area.y + check_area.height;
-            var top1 = area.y;
-            var top2 = check_area.y;
-            var left1 = area.x;
-            var left2 = check_area.x;
-            var right1 = area.x + area.width;
-            var right2 = check_area.x + check_area.width;
+            var bottom2 = checkArea.y + checkArea.height;
+            var top1    = area.y;
+            var top2    = checkArea.y;
+            var left1   = area.x;
+            var left2   = checkArea.x;
+            var right1  = area.x + area.width;
+            var right2  = checkArea.x + checkArea.width;
+
             if (bottom1 < top2 || top1 > bottom2 || right1 < left2 || left1 > right2) {
                 continue;
             }

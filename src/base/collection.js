@@ -1,6 +1,7 @@
-var Backbone = require('backbone');
+require("backbone.nativeajax");
+var Exoskeleton = require("exoskeleton");
 
-var BaseCollection = Backbone.Collection.extend({
+var BaseCollection = Exoskeleton.Collection.extend({
 
 });
 

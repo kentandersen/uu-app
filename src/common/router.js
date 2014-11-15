@@ -1,5 +1,4 @@
-var $ = require("jquery");
-var Backbone = require("backbone");
+var Exoskeleton = require("exoskeleton");
 var NavigationView = require("../navigation/navigation.view");
 var ExploratoryListView = require("../exploratoryList/exploratoryList.view");
 var CardListView = require("../cardList/cardList.view");
@@ -16,11 +15,17 @@ var changePage = function(view) {
   }
 
   currentElement = view;
-  $("main").html(currentElement.$el);
+
+  var mainEl = document.querySelector("main");
+  while (mainEl.firstChild) {
+    mainEl.removeChild(mainEl.firstChild);
+  }
+
+  mainEl.appendChild(currentElement.el);
 };
 
 
-var Router = Backbone.Router.extend({
+var Router = Exoskeleton.Router.extend({
 
   routes: {
     "":               "listCards",

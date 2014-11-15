@@ -29,11 +29,11 @@ var CardListView = BaseView.extend({
 
     this.renderTemplate(data);
 
-    placement(this.$(".item a"), size.height, size.width);
+    placement(document.querySelectorAll(".item a"), size.height, size.width);
   },
 
   renderLoading: function() {
-    this.$el.html("Laster spennende ting...");
+    this.el.innerHTML = "Laster spennende ting...";
   },
 
   getElementSize: function () {
