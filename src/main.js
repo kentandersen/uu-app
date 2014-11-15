@@ -1,6 +1,6 @@
-var Backbone = require("backbone");
+var Exoskeleton = require("exoskeleton");
 var Router = require("./common/router");
 
 var router = new Router();
 
-Backbone.history.start();
+Exoskeleton.history.start();

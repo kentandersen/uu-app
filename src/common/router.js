@@ -1,5 +1,4 @@
-var $ = require("jquery");
-var Backbone = require("backbone");
+var Exoskeleton = require("exoskeleton");
 var NavigationView = require("../navigation/navigation.view");
 var ExploratoryListView = require("../exploratoryList/exploratoryList.view");
 var CardListView = require("../cardList/cardList.view");
@@ -20,7 +19,7 @@ var changePage = function(view) {
 };
 
 
-var Router = Backbone.Router.extend({
+var Router = Exoskeleton.Router.extend({
 
   routes: {
     "":               "listCards",
