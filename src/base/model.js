@@ -1,3 +1,4 @@
+require("backbone.nativeajax");
 var Exoskeleton = require("exoskeleton");
 
 var BaseModel = Exoskeleton.Model.extend({
