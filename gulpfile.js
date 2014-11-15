@@ -8,8 +8,6 @@ var rimraf = require('rimraf');
 
 var browserify = require('browserify');
 
-var hbsfy = require('hbsfy');
-
 var source = require('vinyl-source-stream');
 var jshint = require('gulp-jshint');
 var imagemin = require('gulp-imagemin');
@@ -63,15 +61,9 @@ gulp.task('html', function() {
 });
 
 gulp.task('js', function() {
-  var handlebars = hbsfy.configure({
-    extensions: ["hb"]
-  });
   return gulp.src(webapp + '/main.js')
     .pipe(transform(function(filename) {
-      return browserify(filename, {
-        transform: [handlebars],
-        debug: true
-      })
+      return browserify(filename, { debug: true })
       .ignore("jquery")
       .ignore("underscore")
       .require([{expose: "backbone", file: path.resolve("./shim/backbone.js")}])

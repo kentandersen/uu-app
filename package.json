@@ -9,7 +9,13 @@
   },
   "author": "Kent Andersen <kentareandersen@gmail.com>",
   "license": "ISC",
+  "browserify": {
+    "transform": [
+      "./config/hbsfy"
+    ]
+  },
   "dependencies": {
+    "backbone.nativeajax": "^0.2.0",
     "backbone.nativeview": "^0.3.2",
     "exoskeleton": "^0.7.0",
     "express": "~4.4.3",
