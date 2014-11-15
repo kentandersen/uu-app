@@ -1,7 +1,6 @@
 // fra http://stackoverflow.com/questions/6224571/positioning-multiple-random-sized-absolutely-positioned-elements-so-they-dont
-var $ = require("jquery");
 
-module.exports = function($elements, totalHeight, totalWidth) {
+module.exports = function(elements, totalHeight, totalWidth) {
 
     var min_x = 0;
     var max_x =  totalWidth;
@@ -9,13 +8,13 @@ module.exports = function($elements, totalHeight, totalWidth) {
     var max_y = totalHeight;
     var filled_areas = [];
 
-    $elements.each(function() {
+    [].forEach.call(elements, function(element) {
         var area;
-        var rand_x=0;
-        var rand_y=0;
+        var rand_x = 0;
+        var rand_y = 0;
 
-        var width = $(this).width();
-        var height = $(this).height();
+        var width   = element.offsetWidth;
+        var height  = element.offsetHeight
 
         var max_x_subtracted = max_x - width;
         var max_y_subtracted = max_y - height;
@@ -30,7 +29,8 @@ module.exports = function($elements, totalHeight, totalWidth) {
 
         filled_areas.push(area);
 
-        $(this).css({left:rand_x, top: rand_y});
+        element.style.left  = rand_x + "px";
+    //     element.style.top   = rand_y + "px";
     });
 
     function check_overlap(area) {

@@ -15,7 +15,13 @@ var changePage = function(view) {
   }
 
   currentElement = view;
-  $("main").html(currentElement.$el);
+
+  var mainEl = document.querySelector("main");
+  while (mainEl.firstChild) {
+    mainEl.removeChild(mainEl.firstChild);
+  }
+
+  mainEl.appendChild(currentElement.el);
 };
 
 

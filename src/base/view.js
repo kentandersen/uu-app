@@ -11,7 +11,7 @@ var BaseView = Exoskeleton.NativeView.extend({
       template = this.template;
     }
 
-    this.$el.html(template(data));
+    this.el.innerHTML = template(data);
   }
 
 });
