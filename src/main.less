@@ -17,11 +17,20 @@ body {
     color: @gray-light;
     font-familiy: Georgia;
     font-size: 1rem;
+    padding-top:6rem; // ca lik høyden på .site-controls
 
 }
 
 main {
     height: calc(~"100vh - 99px");
+}
+
+.site-controls {
+    position:fixed;
+    top:0;
+    width: 100%;
+    background: @dark;
+    z-index:2;
 }
 
 //
