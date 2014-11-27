@@ -19,7 +19,7 @@ var CardModel = BaseModel.extend({
   getImportance: function(phase) {
     var importance = this.get("importance");
     if(typeof importance === "number"){
-      return importance
+      return importance;
     } else if(Array.isArray(importance)) {
       return importance[phase];
     }
