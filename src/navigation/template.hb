@@ -2,7 +2,7 @@
 
     <img src="images/uu-logo.png" alt="logo"/>
     {{#if showBackButton}}
-    <a href="#" class="closebtn">
+    <a href="/" class="closebtn">
         <span class="visuallyhidden">Tilbake til forside</span>
     </a>
 

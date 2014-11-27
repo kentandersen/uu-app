@@ -3,21 +3,12 @@ nav {
 
     .closebtn { // lukkeknappen i øvre høyre hjørne på kortvisning
         display:inline-block;
-        &:after {
-            padding:1rem 1.2rem;
-            line-height:1;
-            border-radius: 50%; // ish
-            background:@green-light;
-            display:inline-block;
-            position:absolute;
-            top:1rem;
-            right:1rem;
-            content:'X';
-            color:#fff;
-            font-size:2rem;
-
-            font-weight:bold;
-        }
+        position:absolute;
+        width:4rem;
+        height:4rem;
+        right:1.5625em; // lik padding på containeren
+        border-radius: 50%;         
+        background: @blue-light url('../images/x-white.png') no-repeat center center;
     }
 
     .logo-container {
