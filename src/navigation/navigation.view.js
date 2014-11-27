@@ -9,7 +9,8 @@ var NavigationView = BaseView.extend({
     var hash = window.location.hash.substr(1);
 
     this.renderTemplate({
-        isListe         : hash === "liste",
+        isListe         : hash === "" ||
+                          hash === "liste",
         isExploratory   : hash === "exploratory",
         showBackButton  : hash !== "" &&
                           hash !== "liste" &&
