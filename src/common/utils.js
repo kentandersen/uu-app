@@ -3,10 +3,10 @@ var _now = function() {
   return new Date().getTime();
 };
 
-exports.throttle = function throttle(fn, threshhold, scope) {
-  threshhold || (threshhold = 250);
-  var last,
-      deferTimer;
+exports.throttle = function throttle(fn, thresh, scope) {
+  var threshhold = thresh || 250;
+  var last, deferTimer;
+
   return function () {
     var context = scope || this;
 
@@ -24,4 +24,4 @@ exports.throttle = function throttle(fn, threshhold, scope) {
       fn.apply(context, args);
     }
   };
-}
+};

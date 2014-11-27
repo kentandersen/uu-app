@@ -34,7 +34,8 @@ module.exports = function(elements, options) {
     });
 
     function checkOverlap(area) {
-        for (var i = 0; i < filledAreas.length; i++) {
+        var filledAreasLength =  filledAreas.length;
+        for (var i = 0; i < filledAreasLength; i++) {
 
             checkArea = filledAreas[i];
 

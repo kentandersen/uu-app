@@ -41,7 +41,7 @@ var CardListView = BaseView.extend({
 
   getElementSize: function () {
     var bodyBoundingRect = document.body.getBoundingClientRect();
-    var boundingRect = this.el.getBoundingClientRect()
+    var boundingRect = this.el.getBoundingClientRect();
 
     return {
       minHeight : boundingRect.top,
@@ -57,16 +57,16 @@ var CardListView = BaseView.extend({
     var sectionHeight = this.el.offsetHeight / 6;
     // var processPosition = scrollTop / sectionHeight;
     if(scrollTop < sectionHeight) {
-      console.log("seksjon 1")
+      console.log("seksjon 1");
 
     } else if(scrollTop < sectionHeight*2) {
-      console.log("seksjon 2")
+      console.log("seksjon 2");
 
     } else if(scrollTop < sectionHeight*3) {
-      console.log("seksjon 3")
+      console.log("seksjon 3");
 
     } else if(scrollTop < sectionHeight*4) {
-      console.log("seksjon 4")
+      console.log("seksjon 4");
     }
 
   },
