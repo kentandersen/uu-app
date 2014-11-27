@@ -1,20 +1,27 @@
 <header>
+  <div class="container">
     <h1 class="decorated">{{title}}</h1>
     <p class="lead">{{preface}}</p>
+  </div>
 </header>
 
 {{#if figure}}
 <figure class="colorid-{{colorid}}" {{#if figureBackgroundColor}}style="background-color:{{figureBackgroundColor}}"{{/if}}>
-  <img src="{{figure}}" alt="Katt"/>
+  <div class="container">
+    <img src="{{figure}}" alt="Katt"/>
+  </div>
 </figure>
 {{/if}}
 
 
 <div class="article-body">
-  {{{body}}}
+  <div class="container">
+    {{{body}}}
+  </div>
 </div>
-<aside>
 
+<aside>
+  <div class="container">
   {{#if reference}}
   <section>
     <h2>Referanser og ressurser</h2>
@@ -49,5 +56,5 @@
 
   </section>
   {{/if}}
-
+  </div>
 </aside>
