@@ -85,10 +85,6 @@ gulp.task('dev', function() {
   gulp.watch(webapp + '/index.html', ['html']);
 });
 
-gulp.task('tdd', function (done) {
-  karma.start(karmaConfig, done);
-});
-
 
 // Groups
 gulp.task('test', ['jshint']);
