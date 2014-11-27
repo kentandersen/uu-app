@@ -21,11 +21,13 @@ var CardListView = BaseView.extend({
 
   render: function() {
     var size = this.getElementSize();
+    var phase = this.getCurrentPhase();
 
     var data = this.collection.map(function(model) {
       var attrs = model.toJSON();
-      // attrs.importance = model.getImportance();
+      attrs.importance = model.getImportance(phase);
       attrs.colorid = model.getColorId();
+      attrs.cid = model.cid;
 
       return attrs;
     });
@@ -33,6 +35,8 @@ var CardListView = BaseView.extend({
     this.renderTemplate(data);
 
     placement(document.querySelectorAll(".item a"), this.getElementSize());
+
+    this._currentPhase = phase;
   },
 
   renderLoading: function() {
@@ -43,37 +47,55 @@ var CardListView = BaseView.extend({
     var bodyBoundingRect = document.body.getBoundingClientRect();
     var boundingRect = this.el.getBoundingClientRect();
 
+    var minWidth  = boundingRect.left + document.body.scrollLeft;
+    var minHeight = boundingRect.top + document.body.scrollTop;
+
     return {
-      minHeight : boundingRect.top,
-      minWidth  : boundingRect.left,
-      width     : bodyBoundingRect.width - boundingRect.left,
-      height    : bodyBoundingRect.height - boundingRect.top
+      minWidth  : minWidth,
+      minHeight : minHeight,
+      width     : bodyBoundingRect.width - minWidth,
+      height    : bodyBoundingRect.height - minHeight
     };
   },
 
   onWindowScroll: function() {
-
-    var scrollTop = document.body.scrollTop;
-    var sectionHeight = this.el.offsetHeight / 6;
-    // var processPosition = scrollTop / sectionHeight;
-    if(scrollTop < sectionHeight) {
-      console.log("seksjon 1");
-
-    } else if(scrollTop < sectionHeight*2) {
-      console.log("seksjon 2");
-
-    } else if(scrollTop < sectionHeight*3) {
-      console.log("seksjon 3");
-
-    } else if(scrollTop < sectionHeight*4) {
-      console.log("seksjon 4");
-    }
-
+    var phase = this.getCurrentPhase();
+    this.reevaluateImportance(phase);
   },
 
   remove: function() {
     window.onscroll = null;
     BaseView.prototype.remove.apply(this, arguments);
+  },
+
+  reevaluateImportance: function(phase) {
+    if(phase === this._currentPhase) return;
+
+    var elements = document.querySelectorAll(".item a");
+
+    [].forEach.call(elements, function(element) {
+      var cid = element.getAttribute("data-cid");
+      var model = this.collection.get(cid);
+
+      if(model) {
+        var importance = model.getImportance(phase);
+        element.className = element.className.replace(/importance-[\d]+/, "importance-" + importance);
+
+      } else {
+        element.remove();
+      }
+
+    }, this);
+    placement(elements, this.getElementSize());
+
+    this._currentPhase = phase;
+  },
+
+  getCurrentPhase: function() {
+    var scrollTop = document.body.scrollTop;
+    var sectionHeight = this.el.offsetHeight / 6;
+
+    return Math.floor(scrollTop / sectionHeight);
   }
 
 });

@@ -14,6 +14,15 @@ var CardModel = BaseModel.extend({
 
   getColorId: function() {
     return this.collection.indexOf(this) % AVAILABLE_COLORS_COUNT;
+  },
+
+  getImportance: function(phase) {
+    var importance = this.get("importance");
+    if(typeof importance === "number"){
+      return importance
+    } else if(Array.isArray(importance)) {
+      return importance[phase];
+    }
   }
 });
 
