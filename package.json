@@ -5,9 +5,9 @@
   "main": "app.js",
   "scripts": {
     "start": "./app.js",
+    "postinstall": "./node_modules/.bin/gulp build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "postinstall": "gulp build",
   "author": "Kent Andersen <kentareandersen@gmail.com>",
   "license": "ISC",
   "browserify": {
