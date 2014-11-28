@@ -6,25 +6,34 @@
     .bulb {
         position:fixed;
 
-        .transition(~"left 2s, top 2s, width 2s, height 2s");
+        .transition(~"left 1s, top 1s, width 1s, height 1s, max-height 1s, max-width 1s, font-size 1s");
     }
 
     .importance-0 {
-        width: 18rem;
-        height: 18rem;
+        width: 20vw;
+        height: 20vw;
+
+        max-width: 250px;
+        max-height: 250px;
     }
 
     .importance-1 {
-        width: 10rem;
-        height: 10rem;
+        width: 12vw;
+        height: 12vw;
+
+        font-size: 0.8em;
+
+        max-width: 150px;
+        max-height: 150px;
     }
 
     .importance-2 {
-        width: 2rem;
-        height: 2rem;
+        width: 3vw;
+        height: 3vw;
 
-        span {
-            display: none;
-        }
+        max-width: 50px;
+        max-height: 50px;
+
+        font-size: 0;
     }
 }

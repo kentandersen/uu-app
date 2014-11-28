@@ -1,5 +1,19 @@
 // fra http://stackoverflow.com/questions/6224571/positioning-multiple-random-sized-absolutely-positioned-elements-so-they-dont
 
+var getSize = function(element) {
+    var clone = element.cloneNode();
+    element.parentNode.appendChild(clone);
+
+    var returnObj = {
+        width:  clone.offsetWidth,
+        height: clone.offsetHeight
+    };
+    clone.remove();
+
+    return returnObj;
+};
+
+
 module.exports = function(elements, options) {
 
     var minX = options.minWidth || 0;
@@ -10,11 +24,13 @@ module.exports = function(elements, options) {
 
     [].forEach.call(elements, function(element) {
         var area;
+        var size = getSize(element);
+
         var randX = 0;
         var randY = 0;
 
-        var width  = element.offsetWidth;
-        var height = element.offsetHeight;
+        var width  = size.width;
+        var height = size.height;
 
         var subtractedMaxX = maxX - width;
         var subtractedMaxY = maxY - height;
@@ -26,6 +42,10 @@ module.exports = function(elements, options) {
             randY = Math.round(minY + ((subtractedMaxY - minY)*(Math.random() % 1)));
             area = {x: randX, y: randY, width: width, height: height};
         } while(checkOverlap(area) && loopCounter < 5000);
+
+        if (loopCounter == 5000) {
+            console.log("loopCounter avbrøt plassering");
+        };
 
         filledAreas.push(area);
 
@@ -55,6 +75,4 @@ module.exports = function(elements, options) {
         }
         return false;
     }
-
-
 };
