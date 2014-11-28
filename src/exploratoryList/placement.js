@@ -45,7 +45,7 @@ module.exports = function(elements, options) {
 
         if (loopCounter == 5000) {
             console.log("loopCounter avbrøt plassering");
-        };
+        }
 
         filledAreas.push(area);
 

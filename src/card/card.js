@@ -35,8 +35,8 @@ var CardModel = BaseModel.extend({
   generateRandomImportance: function() {
     var arr = [];
     for (var i = 0; i < 7; i++) {
-      arr.push(getRandomArbitrary(0, 2))
-    };
+      arr.push(getRandomArbitrary(0, 2));
+    }
     return arr;
   }
 });
