@@ -5,7 +5,7 @@ var CardListView = BaseView.extend({
 
   template: template,
 
-  className: "card-list",
+  className: "card-list-wrapper",
 
   initialize: function() {
     this.listenTo(this.collection, "request", this.renderLoading);
