@@ -2,21 +2,38 @@
     "title":"Skjemaer",
     "category": "navigation",
     "importance": 2,
-    "preface": "Det er mange retningslinjer om hva som er god UX når man lager skjema. De viktigste tingene man må tenke på er hvordan man håndterer valideringer og feilmeldinger, hvordan man navngir elementer i skjema og rekkefølgen, og mellomlagring. I tillegg er det viktig å følge retningslinjer for tekst, farger, kontraster og illustrasjoner som ved annet innhold.",
+    "preface": "Brukervennlige skjemaer fordrer god håndtering av valideringer og feilmeldinger, navngivning av elementer i skjemaet, rekkefølgen på felter, samt mellomlagring. I tillegg er det viktig å følge retningslinjer for tekst, farger, kontraster og illustrasjoner, som ved annet innhold.",
     "figure": "/images/skjema-2x.png",
-    "body": "<h2>Valideringer</h2> <p>Det er viktig at melding om valideringsfeil kommer tett på feltet det gjelder, slik at svaksynte med forstørret skjerm raskt ser hvor feilen ble gjort. Fokus bør settes på en oppsummering av alle feil i skjemaet, som legges øverst. En valideringsmelding som ligger et stykke unna fra der feilen er vil ikke være synlig for en som har forstørret skjermen.<br>Valideringsmeldinger skal vises med både farge og tekst. Den kan for eksempel ikke bare vises ved å kun markere feltet med farge, da en som er fargeblind kan ha utfordringer med å oppfatte feilen. For en dyslektiker er det derimot bra å få farge, og det gir en rask visuell oversikt. Norsk lov krever også at du gir forslag til hvordan feilen kan rettes. For eksempel ved å si noe om formatet som kreves.</p> <h2>Rekkefølge på felter</h2> <p>For blinde er det alfa og omega at navnet på inputfeltet er markert før selve inputfeltet, slik at de vet hva inputfeltet gjelder. Skal man oppgi navn, velg derfor å presentere «navn» «input» Hvis du kun legger beskrivelsen av hva som skal legges i inputfeltet som placeholder inne i inputfeltet vil blinde måtte gjette seg frem til hva feltet gjelder. Svaksynte/fargeblinde vil ha utfordringer med å lese hva som forventes. I tillegg er det forvirrende at man ikke lenger kan se hva feltet gjelder når man har lagt inn innhold og ønsker å se gjennom hva man har fylt ut.</p> <h2>Kontraster</h2> <p>Sørg for at det er god kontrast mellom fargen på input feltet og bakgrunnsfargen for nettsiden på skjemaet. Hvis kundens grafiske profil ikke byr på gode nok kontraster, kan du velge å ramme inn inputfeltene. Les mer om kontraster i kortet om farger.</p> <h2>Mellomlagring</h2> <p>WCAG AAA krever at skjemaer og steder som krever input fra bruker tilbyr mellomlagring i opp til 30 min. De fleste nettleserer fikser dette av seg selv, men dobbeltsjekk at dine brukeres foretrukne browser tilbyr dette.</p>",
+    "body": "<h2>Valideringer</h2>
+            <p>Melding om valideringsfeil bør komme tett på feltet det gjelder, slik at svaksynte med forstørret skjerm raskt ser hvor feilen ble gjort. I tillegg bør en oppsummering av alle feil i skjemaet legges øverst. En valideringsmelding som ligger et stykke unna der feilen er, vil ikke være synlig for en som har forstørret skjermen.
+            </p>
+
+            <p>Valideringsmeldinger skal vises med både farge og tekst. De kan for eksempel ikke bare vises ved å kun markere feltet med farge, da en som er fargeblind kan ha utfordringer med å oppfatte feilen. For en dyslektiker er det derimot bra å få farge, for det gir en rask visuell oversikt. Gi også forslag til hvordan feilen kan rettes, for eksempel ved å si noe om formatet som kreves.
+            </p>
+
+            <h2>Rekkefølge på felter</h2>
+            <p>For de med synshemming, er det svært viktig at navnet på inputfeltet er markert før selve inputfeltet, slik at de vet hva inputfeltet gjelder. Skal du oppgi navn, velg derfor å presentere <navn> <input>. Hvis du kun legger beskrivelsen av hva som skal legges i inputfeltet som placeholder inne i selve inputfeltet, vil blinde måtte gjette seg frem til hva feltet gjelder. Svaksynte og fargeblinde vil ha utfordringer med å lese hva som forventes. Det er også forvirrende at man ikke lenger kan se hva feltet gjelder når man har lagt inn innhold, og ønsker å se gjennom hva man har fylt ut.
+            </p>
+
+            <h2>Kontraster</h2>
+            <p>Sørg for god kontrast mellom fargen på inputfeltet og bakgrunnsfargen for selve nettsiden. Byr ikke kundens grafiske profil på gode nok kontraster, kan du velge å ramme inn inputfeltene. Les mer om kontraster i kortet om farger.
+            </p>
+
+            <h2>Mellomlagring</h2>
+            <p>WCAG AAA krever at skjemaer og steder som krever input fra bruker tilbyr mellomlagring i opptil 30 minutter. De fleste nettlesere ivaretar dette automatisk, men dobbeltsjekk at dine brukeres foretrukne nettleser tilbyr dette.
+            </p>",
     "reference": [{
         "url": "http://uu.difi.no/veiledning/suksesskriterier/333-forslag-ved-feil",
-        "title": "Forslag ved feil"
+        "title": "Difis suksesskriterier, forslag ved feil"
     }, {
         "url": "http://uu.difi.no/veiledning/suksesskriterier/412-navn-rolle-verdi",
-        "title": "Navn, rolle, verdi"
+        "title": "Difis suksesskriterier, navn, rolle, verdi"
     }, {
         "url": "http://uu.difi.no/veiledning/suksesskriterier/332-ledetekster-eller-instruksjoner",
-        "title": "Ledetekster eller instruksjoner"
+        "title": "Difis suksesskriterier, ledetekster eller instruksjoner"
     }, {
         "url": "http://uu.difi.no/veiledning/suksesskriterier/322-inndata",
-        "title": "Inndata"
+        "title": "Difis suksesskriterier, inndata"
     }],
     "relevant": [{
         "url": "#kort/kontraster",

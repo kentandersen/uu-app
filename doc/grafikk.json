@@ -1,5 +1,21 @@
 {
     "title":"Grafikk",
-    "category": "design",
-    "importance": 2
+    "category": "navigation",
+    "importance": 2,
+    "preface": "Noen brukere trenger supplerende informasjonen for å forstå budskapet du formidler. Benytt gjerne grafikk og illustrasjon sammen med tekst. Grafikk kan også brukes som kun et stemningsbærende element. Tenk først og fremst på hvilken funksjon grafikken skal ha, og hva du ønsker å kommunisere med den. Skal den f.eks. skal oppføre seg som en lenke, må elementene ha god nok fargekontrast, og de bør suppleres med tekst.",
+    "body": "<h2>TVektorgrafikk</h2>
+            <p>Grafikk som kun er stemningsbærende elementer, bør legges som bakgrunnsbilde i CSS-en, slik at de ikke leses opp for blinde. Ønsker man at grafikken skal kunne økes og minskes i størrelse, bør den være vektorgrafikk og ikke pikselgrafikk. Piksler blir hakkete og uklare om man forandrer størrelsen på elementet.
+            </p>",
+    "reference": [{
+        "url": "http://uu.difi.no/veiledning/nettsider/uu-skolen/bilder-og-grafikk",
+        "title": "Difis uu-skole, bilder og grafikk"
+    }],
+    "relevant": [{
+        "url": "/#kort/farger",
+        "title": "Farger"
+    },{
+        "url": "/#kort/responsive",
+        "title": "Responsive"
+    }]
+
 }

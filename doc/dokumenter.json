@@ -1,0 +1,20 @@
+{
+    "title":"Dokumenter",
+    "category": "content",
+    "importance": 2,
+    "body": "<p>Det er ikke bare nettsidene du lager som skal være tilgjengelige. Du må også sørge for at dokumenter på nettsidene kan brukes av alle. Flere UU-eksperter er skeptiske til bruken av dokumenter, selv om for eksempel Adobe selv mener det er mulig å gjøre PDFer tilgjengelige. Du har gjerne litt mindre kontroll med oppsettet i dokumenter, og det er ikke sikkert at skjermleseren håndterer dokumentet like bra som en nettside. I tillegg vil det å åpne et dokument ta brukeren ut av kontekst.</p><h2>Samme prinsipper</h2><p>Skal du allikevel utforme dokumenter som skal ligge på nettsiden, tenk på de samme tingene som når du utformer nettsiden. For eksempel kontrast, fargebruk, font-hierarki og ikoner. Det har blitt utformet en standard for dokumenter, men denne er ikke lovpålagt. </p>",
+    "reference": [{
+        "url": "http://open.bekk.no/Digipost-for-svaksynte-og-blinde",
+        "title": "Les hvordan de har jobbet med tilgjengelige dokumenter på Digipost"
+    }],
+    "relevant": [{
+        "url": "http://standard.difi.no/hjelp-og-veiledning/universell-utforming-av-elektroniske-dokumenter",
+        "title": "Difis veiledning om utforming av elektroniske dokumenter"
+    },{
+        "url": "http://kvalitet.difi.no/kriteriesett/kvalitet-pa-nett/2013/113-nedlastbare-dokument-er-tilgjengelige",
+        "title": "Difis kriterie 1.13 Nedlastbare dokumenter er tilgjengelige"
+    },{
+        "url": "http://uu.difi.no/uu-blogg/2014/04/likeverdig-tilgang-til-det-skrevne-ord-om-tekst-og-universell-utforming",
+        "title": "Difis bloggpost «Likeverdig tilgang til det skrevne ord - om tekst og universell utforming»"
+    }]
+}

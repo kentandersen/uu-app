@@ -1,0 +1,27 @@
+{
+    "title":"Ikoner",
+    "category": "content",
+    "importance": 2,
+    "preface": "Ikoner bør suppleres med tekst, med mindre de er veletablerte. Skriv “Hjem” ved husikonet som leder til forsiden av nettstedet, og “Meny” ved “hamburgerikonet” som ofte benyttes på mobil. Ikoner som har primærfunksjonalitet, eller står uten tekst, skal følge WCAG-kravene for kontrast. Unntaket er hvis ikonet er supplert med tekst, eller kun er ment som illustrasjon.",
+    "body": "<h2>Vektor eller Piksel</h2>
+            <p>De fleste nye nettlesere har støtte for vektorbasert grafikk (SVG-filer). Vektorgrafikk vil se like fin og skarp ut når man forstørrer den. Pikselgrafikk får hakkete kanter og ufokuserte motiver når man zoomer inn. Som utvikler må du sørge for at ikonene er tydelig forklart i koden, slik at de med synshemming får en forklaring på hva ikonet står for. Attributter som title, alt, aria-label osv kan fungere. Husk at det fint går an å skjule tekst visuelt, men likevel la den bli lest opp av skjermleser.
+            </p>",
+    "reference": [{
+        "url": "http://uu.difi.no/veiledning/suksesskriterier/111-ikke-tekstlig-innhold",
+        "title": "Difis Ikke-tekstlig innhold"
+    }],
+    "example": [{
+        "url": "https://www.nav.no/Forsiden",
+        "title": "Nav.no"
+    }],
+    "relevant": [{
+        "url": "#/kort/farger",
+        "title": "Farger"
+    },{
+        "url": "#/kort/kontraster",
+        "title": "Kontraster"
+    },{
+        "url": "#/kort/bilder",
+        "title": "Bilder"
+    }]
+}

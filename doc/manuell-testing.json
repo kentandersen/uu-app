@@ -1,0 +1,20 @@
+{
+    "title":"Manuell testing",
+    "category": "content",
+    "importance": 2,
+    "body": "<p>Mange av lovkravene bør testes manuelt, ideelt sett av front end-utvikler og interaksjonsdesigner sammen i en læringsfase. Test krav under de tre første prinsippene (mulig å oppfatte, mulig å betjene og forståelig) sammen. Det gjelder blant annet tastaturnavigasjon, validering av inndata, meningsbærende lenker og tekster. Test prinsipp fire (robust rammeverk) teknisk, for eksempel ved bruk av Total validator.</p><h2>Ansvarsfordeling</h2><p>Ha et bevisst forhold til hvem som har hovedansvar for de forskjellige kravene i prosjektet. Sett opp en liste over hvilke kriterier som skal testes manuelt, og hvilke som skal testes teknisk. La fagressurser teste innhold, men tekster kan gjerne brukertestes med representanter for målgruppen. Brukeres behov og tilbakemeldinger bør være førende for hvordan tekstene skrives.</p>",
+    "reference": [{
+        "url": "http://open.bekk.no/svarer-du-egentlig-pa-det-brukeren-lurer-pa",
+        "title": "Svarer du egentlig på det brukeren lurer på?"
+    }, {
+        "url": "http://www.optimalworkshop.com",
+        "title": "Verktøy for brukertesting"
+    }],
+    "relevant": [{
+        "url": "#kort/testverktøy",
+        "title": "Testverktøy"
+    },{
+        "url": "#kort/brukertest",
+        "title": "Brukertest"
+    }]
+}

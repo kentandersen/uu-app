@@ -1,5 +1,49 @@
 {
     "title":"Navigasjon",
-    "category": "navigation",
-    "importance": 2
+    "category": "content",
+    "importance": 2,
+    "preface": "All funksjonalitet på en nettside skal fungere med kun tastatur. Brukerne må også gis god nok tid til å lese og bruke innholdet, og god nok hjelp til å finne frem til innholdet de er ute etter. Sørg for at brukerne kan navigere seg rundt på nettstedet, at det finnes flere måter å nå frem til en nettside på, og at innholdet ikke er skadelig for de med epilepsi.",
+    "body": "<h2>Innhold</h2>
+            Du kan legge inn en egen mekanisme som lar brukeren hoppe over blokker med innhold. Dette er spesielt nyttig for brukere som er på nettstedet med skjermleser. Pass også på at hver side har en unik sidetittel som beskriver emne eller formål for siden. Se også <a href='#/kort/innhold'>kortet om innhold</a>.
+            <h2>Fokus</h2>
+            Brukeren skal forstå hvor på nettstedet hun er. Det kan for eksempel gjøres ved å markere elementet brukeren står på, eller peker på. Fokus skal også være tydelig for de som er fargeblinde eller har en synshemming, som tilsier at en endring bør skje for å signalisere hvor brukeren står. Et eksempel er stiplet linje rundt aktivt element. Merk også at om brukeren setter fokus på en komponent, bør ikke konteksten endres signifikant.
+            <h2>Lenker</h2>
+            Brukeren skal få hjelp til å finne frem til det innholdet hun leter etter. For lenker, er det viktig at brukeren skjønner hva lenken gjør, hvor hun ledes, eller hva som skjer når hun trykker på lenken. Mer om dette i <a href='#/kort/lenker'>kortet om lenker</a>.
+            <h2>Tastatur</h2>
+            Nettstedet skal kunne benyttes med kun tastatur. Noen brukere har vansker med å navigere ved hjelp av mus. Pass på at det ikke er noen “tastaturfeller”, det vil si steder hvor man ikke kommer videre med kun tastatur. Logisk struktur, riktig rekkefølge på innhold og synlig markering av hvor man er på siden er viktig for alle brukere, men spesielt de som bruker tab-tasten for å navigere rundt på siden. La gjerne noen med synshemming teste nettstedet ditt for å undersøke om du har lagt opp til en fornuftig tastaturnavigasjon og struktur. ",
+    "reference": [{
+        "url": "http://uu.difi.no/veiledning/suksesskriterier/131-informasjon-og-relasjoner",
+        "title": "Difis suksesskriterier, informasjon og relasjoner"
+    },{
+        "url": "http://uu.difi.no/veiledning/suksesskriterier/132-meningsfylt-rekkef%C3%B8lge",
+        "title": "Difis suksesskriterier, meningsfylt rekkefølge"
+    },{
+        "url": "http://uu.difi.no/veiledning/suksesskriterier/211-tastatur",
+        "title": "Difis suksesskriterier, tastatur"
+    },{
+        "url": "http://uu.difi.no/veiledning/suksesskriterier/212-ingen-tastaturfelle",
+        "title": "Difis suksesskriterier, ingen tastaturfelle"
+    },{
+        "url": "http://uu.difi.no/veiledning/suksesskriterier/241-hoppe-over-blokker",
+        "title": "Difis suksesskriterier, hoppe over blokker"
+    },{
+        "url": "http://uu.difi.no/veiledning/suksesskriterier/245-flere-m%C3%A5ter",
+        "title": "Difis suksesskriterier, flere måter"
+    },{
+        "url": "http://uu.difi.no/veiledning/suksesskriterier/243-fokusrekkef%C3%B8lge",
+        "title": "Difis suksesskriterier, fokusrekkefølge"
+    }],
+    "relevant": [{
+        "url": "#/kort/interaksjon",
+        "title": "Interaksjon"
+    },{
+        "url": "#/kort/skjema",
+        "title": "Skjema"
+    },{
+        "url": "#/kort/lyd",
+        "title": "Lyd (om avspilling, pause, stopp osv.)"
+    },{
+        "url": "#/kort/innhold",
+        "title": "innhold"
+    }]
 }

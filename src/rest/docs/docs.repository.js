@@ -1,4 +1,4 @@
-var fs = require('fs');
+    var fs = require('fs');
 var path = require("path");
 var extend = require('util')._extend;
 var Q = require("q");
@@ -61,11 +61,11 @@ var readDocumentList = function(deferred) {
 };
 
 var readDocument = function(deferred, key) {
-    fs.readFile(path.join('doc', key + '.json'), function (err, data) {
+    fs.readFile(path.join('doc', key + '.json'), 'utf8',  function (err, data) {
         if (err) {
             return deferred.reject(err);
         }
-        data = JSON.parse(data);
+        data = JSON.parse(data.replace(/\n/g, " "));
         data.key = key;
 
         documentCache.set(key, parseDocumentObject(data));

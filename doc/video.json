@@ -1,6 +1,21 @@
 {
     "title":"Video",
-    "body": "med masse saus!",
-    "category": "content",
-    "importance": 1
+    "category": "navigation",
+    "importance": 2,
+    "preface": "Ved bruk av video, må du ha et alternativ som gjør innholdet tilgjengelig for de som ikke kan eller ønsker å se. Video skal ikke starte av seg selv, og bruker skal kunne pause avspilling. For direktesendt videosending, eller hvis videoen allerede er et alternativ til tilgjengelig innhold, som for eksempel tekst, er det ikke krav til dette. Dette kan være i form av manus eller transkripsjon, eller som en beskrivende tekst av budskapet i videoen, hvis det er tilstrekkelig som alternativ.",
+    "reference": [{
+        "url": "http://uu.difi.no/veiledning/suksesskriterier/121-bare-lyd-og-bare-video-forh%C3%A5ndsinnspilt",
+        "title": "Difis Suksesskriterier, bare lyd og bare video (forhåndsinnspilt)"
+    },{
+        "url": "http://uu.difi.no/veiledning/suksesskriterier/122-teksting-forh%C3%A5ndsinnspilt",
+        "title": "Difis Suksesskriterier, teksting (forhåndsinnspilt)"
+    },{
+        "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv.html",
+        "title": "W3Cs Time-based Media"
+    }],
+    "relevant": [{
+        "url": "/#kort/Lyd",
+        "title": "lyd"
+    }]
 }
+
