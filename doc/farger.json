@@ -2,10 +2,17 @@
     "title":"Farger",
     "category": "navigation",
     "importance": 2,
-    "preface": "Det er mange retningslinjer om hva som er god UX når man lager skjema. De viktigste tingene man må tenke på er hvordan man håndterer valideringer og feilmeldinger, hvordan man navngir elementer i skjema og rekkefølgen, og mellomlagring. I tillegg er det viktig å følge retningslinjer for tekst, farger, kontraster og illustrasjoner som ved annet innhold.",
+    "preface": "Som med alle andre visuelle virkemidler, må du passe på hvordan fargebruk faller inn under lovverket for universell utforming. Skal du for eksempel skal signalisere en status, må du vise statusen med mer enn bare en farge. ",
     "figure": "/images/farger-2x.png",
     "figureBackgroundColor": "#272727",
-    "body": "<p>Loven tilsier at du ikke skal bruke kun farge for å signalisere en status. Det er lett å tenke at “blå tekst med understrek på hover”  løser utfordringen, men merk deg at lovverket gir mye større rom for kreativitet (såfremt det ikke er i løpende tekst) I tillegg til fargebruk kan man i tillegg benytte tekst, bilder, ikoner osv. Dette fungerer godt for brukere med nomalt syn, men ikke så bra for svaksynte eller blinde som har egne verktøy for å oppfatte løsningen. For disse segmentene/målgruppene/ brukerne fremhever man funksjonalitet gjennom kode. </p><p>I WCAG 2.0 under prinsipp 1 Mulig å oppfatte, er det en egen retningslinje som handler om å tilrettelegge for brukerne slik at de kan skille forgrunn fra bakgrunn - retningslinje 1.4. Innenfor retningslinjen er det særlig to suksesskriterier som er gjeldende ift. bruk av farger, suksesskriterie 1.4.1 Bruk av farger og suksesskriterie 1.4.3 Kontrast - minimumskrav</p><p>Både retningslinje og suksesskriterier kan testes på mange måter, et enkelt program er Colour contrast analyser (lenke under)</p><p>Ellers har DIFI har en veldig god gjennomgang av kontrast i sin UU-skole, enkelt og greit både rundt kravene og hvordan man faktisk sjekker kontrast</p>",
+    "body": "<h2>Fargeblindhet</h2>
+            <p>Ikke alle ser forskjell på ulike farger. Den vanligste fargeblindheten er rødt mot grønt. Svaksynte kan ha problemer med å skille på farger når de har samme metning.
+            </p>
+            <h2>Lys og kontrast</h2>
+            <p>Når du velger farger, bør du også sjekke hvordan de fungerer på skjerm i sollys. Brukerne er ofte på farten, og det er stor sannsynlighet for at de ønsker å bruke løsningen din utendørs. Ta utgangspunkt i at brukeren ikke har like god skjerm som deg.
+            </p>
+            <p>Bakgrunnen du velger, påvirker om forgrunnsfargen gir god nok kontrast. Sjekk derfor disse opp mot hverandre. Ved farget tekst, gir enkelte farger kun god nok kontrast over 18pt.
+            </p>",
     "reference": [{
         "url": "http://contrastchecker.com/",
         "title": "Contrast Checker"
@@ -14,20 +21,26 @@
         "title": "Web designers check list"
     }, {
         "url": "http://www.paciellogroup.com/resources/contrastanalyser/",
-        "title": "Forståelse av retningslinje 1.4 “Mulig å skille fra hverandre” kan leses mer om her"
+        "title": "Colour Contrast Analyser"
     }, {
         "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast.html",
-        "title": "Inndata"
+        "title": "Forståelse av retningslinje 1.4 “Mulig å skille fra hverandre”, kan du lese mer om her"
     }, {
         "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-without-color",
-        "title": "Suksesskriterie 1.4.1 Bruk av farger"
+        "title": "Suksesskriterier 1.4.1 Bruk av farger"
     }, {
         "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-contrast",
-        "title": "Suksesskriterie 1.4.3 Kontrast - minimumskrav"
-    }],
-    "relevant": [{
+        "title": "Suksesskriterier 1.4.3 Kontrast – minimumskrav"
+    },{
         "url": "http://uu.difi.no/veiledning/nettsider/uu-skolen/kontrast",
         "title": "Difis UU-skole"
+    }],
+    "relevant": [{
+        "url": "/#kort/ikoner",
+        "title": "Ikoner"
+    },{
+        "url": "/#kort/grafikk",
+        "title": "Grafikk"
     }]
 }
 

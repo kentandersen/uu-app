@@ -1,5 +1,62 @@
 {
     "title":"Innhold",
     "category": "content",
-    "importance": 1
+    "importance": 2,
+    "preface": "Vi har to typer innhold: tekstlig og ikke-tekstlig. Ikke-tekstlig innhold er for eksempel bilder, lyd, video og illustrasjoner. Se egne kort for hvordan man forholde seg til ikke-tekstlig forhold.",
+    "body": "<h2>Tydelighet</h2><p>
+            Når du jobber med tekstlig innhold, handler det om å gjøre det lesbart og forståelig. Snakk samme språk som brukeren din. Om du ikke kommer unna vanskelige faguttrykk, kan en beskrivelse eller ordbok hjelpe brukeren. Svar på hva brukeren din lurer på med en gang, og ikke hva du selv har behov for å formidle.
+            </p>
+
+            <h2>Rekkefølge og hierarki</h2>
+            <p>Sørg for at innhold fremstår og fungerer som forventet. Det gjør du ved å sikre konsekvent navigering og oppbygging av innholdselementer. Loven tilsier også at du skal sikre en meningsfylt rekkefølge på innholdet. Et godt typografi-hierarki sørger for mye av dette. Pass for eksempel på overskriftene dine, ikke la en overskrift være brødtekst i bold. Et godt typografi-hierarki vil også la teksten skalere godt på mindre flater.
+            </p>
+
+            <p>Legg også opp til et klart og godt hierarki i designet. Front-end-utvikler sørger for at dette blir riktig implementert. Se gjerne gjennom innholdet sammen med utvikler for å sikre en meningsfylt rekkefølge på innholdet. Hvis mulig, la en synshemmet teste løsningen din. Da vil du fort oppdage om det er krøll med logikken. Se også kortet om fokusrekkefølge.
+            </p>
+
+            <h2>Tekstopplesning</h2>
+            <p>For dyslektikere, analfabeter og folk med dårlig språkforståelse, er opplesning av tekst et godt hjelpmiddel på teksttunge sider. Blinde har gode verktøy for dette allerede. Merk at tekstopplesningsverktøy ofte kan være tunge å laste inn, og kan derfor være et forstyrrende element hvis man bruker mobilen eller har dårlig internettforbindelse.
+            </p>",
+    "reference": [{
+        "url": "http://uu.difi.no/veiledning/suksesskriterier/131-informasjon-og-relasjoner",
+        "title": "Informasjon og relasjoner"
+    },{
+        "url": "http://uu.difi.no/veiledning/suksesskriterier/132-meningsfylt-rekkef%C3%B8lge",
+        "title": "Meningsfylt rekkefølge"
+    },{
+        "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning.html",
+        "title": "Understandable"
+    },{
+        "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior.html",
+        "title": "I tråd med forventinger"
+    },{
+        "url": "http://open.bekk.no/svarer-du-egentlig-pa-det-brukeren-lurer-pa",
+        "title": "Svarer du egentlig pa det brukeren lurer pa"
+    },{
+        "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error.html",
+        "title": "Unngå/ minimere feil"
+    }],
+    "example": [{
+        "url": "https://www.nav.no/Forsiden",
+        "title": "Nav.no"
+    }],
+    "relevant": [{
+        "url": "#/kort/fonter",
+        "title": "Fonter"
+    },{
+        "url": "#/kort/video",
+        "title": "Video"
+    },{
+        "url": "#/kort/bilde",
+        "title": "Bilde"
+    },{
+        "url": "#/kort/lyd",
+        "title": "Lyd"
+    },{
+        "url": "#/kort/struktur",
+        "title": "Struktur"
+    },{
+        "url": "#/kort/responsive",
+        "title": "Responsive"
+    }]
 }

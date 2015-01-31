@@ -1,0 +1,19 @@
+{
+    "title":"Lenker",
+    "category": "navigation",
+    "importance": 2,
+    "preface": "Lenker i løpende tekst skal synliggjøres med mer enn kun farge. Standard visning av lenker er blå tekst med understrekning. Andre metoder kan benyttes så lenge det er forståelig for bruker. Lenker ellers på nettstedet ditt skal skille seg fra øvrig innhold, men her står du fritt til å velge hvordan du viser hva som er lenker.",
+    "body": "<h2>Tydelighet</h2>
+            <p>En lenke er god når den kan forstås alene. Det vil si at bruker forstå hva lenken leder til,  enten gjennom teksten på lenken, eller ut i fra konteksten lenken står i. På den måten kan brukerne selv avgjøre om det er en lenke de ønsker å følge eller ikke.
+            </p>
+            <h2>Form</h2>
+            <p>Formen på lenken bør avgjøres ut i fra hva den skal brukes til. En huskeregel her kan være å vurdere om det er navigasjonslenker, referanselenker eller handlingsdrivere. Referanselenker er lenker i løpende tekst, som tar bruker til detaljering andre steder. Navigasjonslenker kan være menyer, artikkellister, brødsmulesti o.l. Har du samlet en mengde lenker i egen liste, eller konteksten tilsier at det er en lenkeliste, trenger de ikke skille seg like mye ut som i løpende tekst. Handlingsdrivere er typiske «Call to action»-lenker, «Bli kunde»-inngang, «Kontakt oss»-knapp o.l.
+            </p>",
+    "reference": [{
+        "url": "http://uu.difi.no/veiledning/suksesskriterier/244-form%C3%A5l-med-lenke-i-kontekst",
+        "title": "Difis suksesskriterier, formål med lenke (i kontekst)"
+    }, {
+        "url": "http://iallenkelhet.no/2014/08/19/lenker-i-lopende-tekst-tilgjenglig-eller-ikke/#.VAB9wLy1bd4",
+        "title": "Difis suksesskriterier, lenker i løpende tekst"
+    }]
+}
