@@ -1,10 +1,12 @@
 <div class="project-face">Innsikt</div>
 
-<div class="project-face">Konsept</div>
+<div class="project-face">Konsept og design</div>
 
 <div class="project-face">Utvikling</div>
 
 <div class="project-face">Test</div>
+
+<div class="project-face">Forvaltning og vedlikehold.</div>
 
 
 
