@@ -93,7 +93,10 @@ var CardListView = BaseView.extend({
 
   getCurrentPhase: function() {
     var scrollTop = document.body.scrollTop;
-    var sectionHeight = this.el.offsetHeight / 6;
+    if(scrollTop < 0) {
+      scrollTop = 0;
+    }
+    var sectionHeight = this.el.offsetHeight / 4;
 
     return Math.floor(scrollTop / sectionHeight);
   }
