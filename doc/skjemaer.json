@@ -1,7 +1,7 @@
 {
     "title":"Skjemaer",
     "category": "navigation",
-    "importance": 2,
+    "importance": [0, 1, 2, 2, 2, 0],
     "preface": "Brukervennlige skjemaer fordrer god håndtering av valideringer og feilmeldinger, navngivning av elementer i skjemaet, rekkefølgen på felter, samt mellomlagring. I tillegg er det viktig å følge retningslinjer for tekst, farger, kontraster og illustrasjoner, som ved annet innhold.",
     "figure": "/images/skjema-2x.png",
     "body": "<h2>Valideringer</h2>

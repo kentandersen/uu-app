@@ -1,7 +1,8 @@
 {
     "title":"Brukertest",
     "category": "navigation",
-    "importance": 2,
+    "importance": [0, 3, 2, 0, 3, 3],
+
     "body": "<p>Brukertest er et eget fagfelt, men her fokuserer vi kun på brukertesting relatert til Universell Utforming. Inkluder de i målgruppen din som har ekstra behov for UU. Bruk blikksporing for å bli kjent med hvordan ulike syn- og konsentrasjonsvansker påvirker lesing. Tilby hjelpeverktøy for målgruppen din, men la de benytte seg av verktøy de allerede kjenner – det er store variasjoner i funksjonalitet på verktøyene. <h2>Representative brukere i testing</h2><p>La en bruker med synshemming teste løsningen din, helst med det verkøyet han/hun bruker til daglig. </p>",
     "reference": [{
         "url": "http://uu.difi.no/veiledning/nettsider/test-og-testverktoy/brukertesting-med-funksjonshemmde",

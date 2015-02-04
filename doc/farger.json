@@ -1,7 +1,7 @@
 {
     "title":"Farger",
     "category": "navigation",
-    "importance": 2,
+    "importance": [0, 3, 0, 0, 3, 0],
     "preface": "Som med alle andre visuelle virkemidler, må du passe på hvordan fargebruk faller inn under lovverket for universell utforming. Skal du for eksempel skal signalisere en status, må du vise statusen med mer enn bare en farge. ",
     "figure": "/images/farger-2x.png",
     "figureBackgroundColor": "#272727",

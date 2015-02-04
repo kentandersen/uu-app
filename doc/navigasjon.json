@@ -1,7 +1,7 @@
 {
     "title":"Navigasjon",
     "category": "content",
-    "importance": 2,
+    "importance": [0, 3, 1, 0, 1, 1],
     "preface": "All funksjonalitet på en nettside skal fungere med kun tastatur. Brukerne må også gis god nok tid til å lese og bruke innholdet, og god nok hjelp til å finne frem til innholdet de er ute etter. Sørg for at brukerne kan navigere seg rundt på nettstedet, at det finnes flere måter å nå frem til en nettside på, og at innholdet ikke er skadelig for de med epilepsi.",
     "body": "<h2>Innhold</h2>
             Du kan legge inn en egen mekanisme som lar brukeren hoppe over blokker med innhold. Dette er spesielt nyttig for brukere som er på nettstedet med skjermleser. Pass også på at hver side har en unik sidetittel som beskriver emne eller formål for siden. Se også <a href='#/kort/innhold'>kortet om innhold</a>.

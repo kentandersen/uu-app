@@ -1,7 +1,7 @@
 {
     "title":"Innhold",
     "category": "content",
-    "importance": 2,
+    "importance": [2, 1, 3, 2, 2, 1],
     "preface": "Vi har to typer innhold: tekstlig og ikke-tekstlig. Ikke-tekstlig innhold er for eksempel bilder, lyd, video og illustrasjoner. Se egne kort for hvordan man forholde seg til ikke-tekstlig forhold.",
     "body": "<h2>Tydelighet</h2><p>
             Når du jobber med tekstlig innhold, handler det om å gjøre det lesbart og forståelig. Snakk samme språk som brukeren din. Om du ikke kommer unna vanskelige faguttrykk, kan en beskrivelse eller ordbok hjelpe brukeren. Svar på hva brukeren din lurer på med en gang, og ikke hva du selv har behov for å formidle.

@@ -1,7 +1,7 @@
 {
     "title":"Typografi",
     "category": "design",
-    "importance": [0,1,2,0,2,0],
+    "importance": [0, 2, 0, 0, 1, 0],
     "preface": "God typografi forutsetter et klart hierarki. Teksten blir enklere å scanne, og å forstå hva som er overskrift, ingress, brødtekst og så videre. Som en tommelfingerregel bør du holde deg til tre ulike størrelser på typografi på en visning. Det er også best å holde seg til maks to-tre forskjellige fonter for å unngå et rotete inntrykk.",
     "figure": "/images/Typografi-2x.png",
     "body": "<h2>Lesbarhet</h2>

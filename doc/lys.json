@@ -1,7 +1,7 @@
 {
     "title":"Lyd",
     "category": "navigation",
-    "importance": 2,
+    "importance": [0, 1, 3, 0, 2, 0],
     "preface": "Ved bruk av lyd må du ta høyde for døve, eller brukere med nedsatt hørsel. Informasjon skal presenteres på en måte brukerne kan oppfatte. Det vil si at informasjon ikke kun skal være tilgjengelig ved hjelp av en enkelt sans. Bruk gjerne et tekstlig alternativ. Hvis lyden er i en kontekst hvor timingen er viktig for budskapet, må du bruke et tekstbasert mediaalternativ som lar brukeren få informasjon til riktig tid. <br>Brukeren må også kunne pause eller stoppe lyden, samt regulere lydstyrken.",
     "reference": [{
         "url": "http://uu.difi.no/veiledning/suksesskriterier/121-bare-lyd-og-bare-video-forh%C3%A5ndsinnspilt",
